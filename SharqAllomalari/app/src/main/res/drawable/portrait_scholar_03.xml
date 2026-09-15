@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="120dp"
+    android:height="120dp"
+    android:viewportWidth="120"
+    android:viewportHeight="120">
+
+    <path
+        android:pathData="M60,0 A60,60 0 1,1 59.9,0 Z"
+        android:fillColor="#2E7D5B" />
+
+    <path
+        android:fillColor="#F2EBD9"
+        android:pathData="M27,120 C27,97 41,86 60,86 C79,86 93,97 93,120 Z" />
+
+    <path
+        android:fillColor="#1F4A38"
+        android:pathData="M27,120 C27,99 39,88 57,86 L57,120 Z" />
+
+    <path
+        android:fillColor="#D9B48F"
+        android:pathData="M52,72 L68,72 L68,87 L52,87 Z" />
+
+    <path
+        android:fillColor="#E0BC95"
+        android:pathData="M60,38 C71,38 78,47 78,58 C78,70 71,80 60,80 C49,80 42,70 42,58 C42,47 49,38 60,38 Z" />
+
+    <!-- O'rta uzunlikdagi, qora soqol (yosh hakim) -->
+    <path
+        android:fillColor="#2B2622"
+        android:pathData="M46,61 C45,73 51,84 60,87 C69,84 75,73 74,61 C74,67 69,72 60,72 C51,72 46,67 46,61 Z" />
+
+    <path
+        android:fillColor="#3A332C"
+        android:pathData="M52,63 C55,61 58,61 60,62.5 C62,61 65,61 68,63 C66,65 63,65.5 60,65 C57,65.5 54,65 52,63 Z" />
+
+    <path
+        android:fillColor="#2B2622"
+        android:pathData="M48,52 C51,50 55,50 57,51.5" />
+    <path
+        android:fillColor="#2B2622"
+        android:pathData="M63,51.5 C65,50 69,50 72,52" />
+
+    <!-- Tabib sallasi, sodda uslub -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M39,40 C39,24 48,13 60,13 C72,13 81,24 81,40 C81,44 78,47 74,47 L46,47 C42,47 39,44 39,40 Z" />
+
+    <path
+        android:fillColor="#E8E8E8"
+        android:pathData="M41,36 C48,32 54,30 60,30 C66,30 72,32 79,36" />
+    <path
+        android:fillColor="#E8E8E8"
+        android:pathData="M42,27 C48,23 54,21 60,21 C66,21 72,23 78,27" />
+
+    <path
+        android:fillColor="#2E7D5B"
+        android:pathData="M60,15 L64,21 L60,27 L56,21 Z" />
+
+</vector>

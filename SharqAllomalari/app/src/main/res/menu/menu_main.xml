@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_favorites"
+        android:title="@string/favorites_title"
+        android:icon="@drawable/ic_star_filled"
+        app:showAsAction="always"
+        app:iconTint="@color/text_on_primary" />
+
+    <item
+        android:id="@+id/action_observatories"
+        android:title="@string/menu_observatories"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_topics"
+        android:title="@string/menu_topics"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_quiz"
+        android:title="@string/menu_quiz"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_glossary"
+        android:title="@string/menu_glossary"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_about"
+        android:title="@string/about_title"
+        android:icon="@drawable/ic_info"
+        app:showAsAction="always"
+        app:iconTint="@color/text_on_primary" />
+
+</menu>

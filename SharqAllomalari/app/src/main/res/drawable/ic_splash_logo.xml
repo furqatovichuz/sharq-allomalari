@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="200dp"
+    android:height="200dp"
+    android:viewportWidth="200"
+    android:viewportHeight="200">
+
+    <!-- Tashqi orbit halqasi -->
+    <path
+        android:pathData="M100,30 a70,70 0 1,0 0.01,0"
+        android:strokeColor="#D4AF37"
+        android:strokeWidth="3"
+        android:fillColor="#00000000" />
+
+    <!-- Ichki orbit halqasi -->
+    <path
+        android:pathData="M100,42 a58,58 0 1,0 0.01,0"
+        android:strokeColor="#F0D78C"
+        android:strokeWidth="2"
+        android:fillColor="#00000000" />
+
+    <!-- Markaziy sakkiz qirrali yulduz -->
+    <path
+        android:pathData="M100,56 L106.89,83.37 L131.11,68.89 L116.63,93.11 L144,100 L116.63,106.89 L131.11,131.11 L106.89,116.63 L100,144 L93.11,116.63 L68.89,131.11 L83.37,106.89 L56,100 L83.37,93.11 L68.89,68.89 L93.11,83.37 Z"
+        android:fillColor="#D4AF37" />
+
+    <path
+        android:pathData="M100,100 a5,5 0 1,0 0.01,0"
+        android:fillColor="#1B2A4A" />
+</vector>

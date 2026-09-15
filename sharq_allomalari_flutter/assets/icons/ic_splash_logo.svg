@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
+  <path d="M100,30 a70,70 0 1,0 0.01,0" fill="none" stroke="#D4AF37" stroke-width="3" />
+  <path d="M100,42 a58,58 0 1,0 0.01,0" fill="none" stroke="#F0D78C" stroke-width="2" />
+  <path d="M100,56 L106.89,83.37 L131.11,68.89 L116.63,93.11 L144,100 L116.63,106.89 L131.11,131.11 L106.89,116.63 L100,144 L93.11,116.63 L68.89,131.11 L83.37,106.89 L56,100 L83.37,93.11 L68.89,68.89 L93.11,83.37 Z" fill="#D4AF37" />
+  <path d="M100,100 a5,5 0 1,0 0.01,0" fill="#1B2A4A" />
+</svg>

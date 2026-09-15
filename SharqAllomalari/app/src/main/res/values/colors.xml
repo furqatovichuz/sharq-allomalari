@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Asosiy palitra -->
+    <color name="primary">#1B2A4A</color>
+    <color name="primary_dark">#101A30</color>
+    <color name="primary_light">#324875</color>
+    <color name="accent">#D4AF37</color>
+    <color name="accent_light">#F0D78C</color>
+    <color name="accent_dark">#A9841E</color>
+
+    <!-- Fon va sirt ranglari -->
+    <color name="background">#F7F3EA</color>
+    <color name="surface">#FFFFFF</color>
+    <color name="surface_alt">#F1E9D8</color>
+
+    <!-- Matn ranglari -->
+    <color name="text_primary">#1B2128</color>
+    <color name="text_secondary">#5B6472</color>
+    <color name="text_on_primary">#FFFFFF</color>
+    <color name="text_on_accent">#1B2128</color>
+
+    <!-- Chegara va ajratuvchilar -->
+    <color name="divider">#E3DCC8</color>
+    <color name="outline">#D8CFB8</color>
+
+    <!-- Sohalar bo'yicha ranglar (kategoriya belgilari) -->
+    <color name="field_astronomy">#2E5C8A</color>
+    <color name="field_mathematics">#6A4C93</color>
+    <color name="field_medicine">#2E7D5B</color>
+    <color name="field_history">#A05A2C</color>
+    <color name="field_state">#8C2F39</color>
+
+    <!-- Umumiy -->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="star_gold">#FFD66B</color>
+    <color name="transparent">#00000000</color>
+
+    <!-- Status bar -->
+    <color name="status_bar">#101A30</color>
+</resources>

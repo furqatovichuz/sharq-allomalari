@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Sharq Allomalari</string>
+    <string name="app_tagline">O‘rta asr Sharq astronomlari va olimlari</string>
+
+    <!-- Asosiy ekran -->
+    <string name="main_title">Sharq Allomalari</string>
+    <string name="main_subtitle">Buyuk allomalar va ularning ilmiy merosi</string>
+    <string name="search_hint">Olim ismini qidirish…</string>
+    <string name="filter_all">Barchasi</string>
+    <string name="filter_astronomy">Astronomiya</string>
+    <string name="filter_mathematics">Matematika</string>
+    <string name="filter_medicine">Tibbiyot</string>
+    <string name="filter_history">Tarix va adabiyot</string>
+    <string name="filter_state">Davlat arbobi</string>
+    <string name="no_results">Hech narsa topilmadi</string>
+    <string name="scholars_count_format">Jami %1$d alloma</string>
+
+    <!-- Tafsilotlar ekrani -->
+    <string name="section_biography">Hayoti va faoliyati</string>
+    <string name="section_works">Asosiy asarlari</string>
+    <string name="section_achievements">Ilmiy yutuqlari</string>
+    <string name="section_quote">Olim so‘zlaridan</string>
+    <string name="label_years">Yashagan yillari</string>
+    <string name="label_birthplace">Tug‘ilgan joyi</string>
+    <string name="label_field">Faoliyat sohasi</string>
+    <string name="label_academy">Ilmiy maktab / akademiya</string>
+    <string name="label_title">Faxriy unvoni</string>
+    <string name="action_share">Ulashish</string>
+    <string name="action_favorite">Saralanganlarga qo‘shish</string>
+    <string name="action_unfavorite">Saralangandan olib tashlash</string>
+    <string name="share_template">"%1$s (%2$s)\n\n%3$s\n\nManba: \"Sharq Allomalari\" ilovasi"</string>
+
+    <!-- Menyu -->
+    <string name="menu_favorites">Saralanganlar</string>
+    <string name="menu_about">Ilova haqida</string>
+    <string name="menu_search">Qidirish</string>
+
+    <!-- Saralanganlar ekrani -->
+    <string name="favorites_title">Saralangan allomalar</string>
+    <string name="favorites_empty_title">Saralanganlar ro‘yxati bo‘sh</string>
+    <string name="favorites_empty_desc">Olim profilidagi yulduzcha belgisini bosib, uni saralanganlarga qo‘shing.</string>
+
+    <!-- Ilova haqida ekrani -->
+    <string name="about_title">Ilova haqida</string>
+    <string name="about_app_desc">"\"Sharq Allomalari\" ilovasi — O‘rta asrlarda Sharq mintaqasida, xususan Movarounnahr va Xorazmda yashab ijod etgan buyuk astronomlar, matematiklar va mutafakkirlarning ilmiy merosini o‘rganish uchun mo‘ljallangan ma’lumotnoma ilovadir."</string>
+    <string name="about_sources_title">Foydalanilgan manba</string>
+    <string name="about_sources_desc">"Fayzullayeva Saodat Dilshodovna \"Vostochnaya astronomiya\" — o‘quv qo‘llanmasi (Navoiy, 2026) asosida tayyorlandi."</string>
+    <string name="about_academies_title">Ilmiy markazlar</string>
+    <string name="about_academy_baghdad">• Bog\'dod &quot;Bayt al-Hikma&quot; (Donishmandlik uyi) — IX asr</string>
+    <string name="about_academy_khorezm">• Xorazm Ma\'mun akademiyasi — 1004–1017</string>
+    <string name="about_academy_samarkand">• Samarqand rasadxonasi — 1428–1449</string>
+    <string name="about_version">Versiya 1.0</string>
+
+    <!-- Bosh menyu bo'limlari -->
+    <string name="menu_observatories">Rasadxonalar</string>
+    <string name="menu_quiz">Test</string>
+    <string name="menu_glossary">Lug\'at</string>
+    <string name="menu_topics">Mavzular</string>
+
+    <!-- Mavzular ekrani -->
+    <string name="topics_title">Mavzular</string>
+    <string name="topic_keywords_label">Tayanch tushunchalar</string>
+    <string name="topic_questions_label">Nazorat savollari</string>
+
+    <!-- Rasadxonalar ekrani -->
+    <string name="observatories_title">Rasadxonalar</string>
+    <string name="section_key_facts">Asosiy faktlar</string>
+    <string name="section_observatory_scholars">Faoliyat yuritgan olimlar</string>
+
+    <!-- Test ekrani -->
+    <string name="quiz_title">Bilimlarni sinash</string>
+    <string name="quiz_progress_format">Savol %1$d / %2$d</string>
+    <string name="quiz_score_format">To\'g\'ri: %1$d</string>
+    <string name="quiz_next">Keyingisi</string>
+    <string name="quiz_finish">Yakunlash</string>
+    <string name="quiz_restart">Qaytadan boshlash</string>
+    <string name="quiz_close">Yopish</string>
+    <string name="quiz_correct_answer_format">To\'g\'ri javob: %1$s</string>
+    <string name="quiz_result_excellent">Ajoyib natija!</string>
+    <string name="quiz_result_good">Yaxshi natija!</string>
+    <string name="quiz_result_average">Yana mashq qiling</string>
+    <string name="quiz_result_detail_format">%1$d savoldan %2$d tasiga to\'g\'ri javob berdingiz</string>
+
+    <!-- Lug'at ekrani -->
+    <string name="glossary_title">Atamalar lug\'ati</string>
+
+    <!-- Umumiy -->
+    <string name="content_description_avatar">Olim tasviri</string>
+    <string name="content_description_back">Orqaga</string>
+    <string name="content_description_star">Saralangan</string>
+</resources>

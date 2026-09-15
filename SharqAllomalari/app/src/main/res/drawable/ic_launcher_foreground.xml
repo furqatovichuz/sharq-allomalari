@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Tashqi orbit halqasi -->
+    <path
+        android:pathData="M54,21 a33,33 0 1,0 0.01,0"
+        android:strokeColor="#D4AF37"
+        android:strokeWidth="2.5"
+        android:fillColor="#00000000" />
+
+    <!-- Ichki orbit halqasi -->
+    <path
+        android:pathData="M54,29 a25,25 0 1,0 0.01,0"
+        android:strokeColor="#F0D78C"
+        android:strokeWidth="1.5"
+        android:fillColor="#00000000" />
+
+    <!-- Markaziy sakkiz qirrali yulduz (astrolab belgisi) -->
+    <path
+        android:pathData="M54,34 L57.06,46.59 L68.14,39.86 L61.39,50.94 L74,54 L61.39,57.06 L68.14,68.14 L57.06,61.39 L54,74 L50.94,61.39 L39.86,68.14 L46.61,57.06 L34,54 L46.61,50.94 L39.86,39.86 L50.94,46.61 Z"
+        android:fillColor="#D4AF37" />
+
+    <!-- Markaz nuqtasi -->
+    <path
+        android:pathData="M54,54 a3,3 0 1,0 0.01,0"
+        android:fillColor="#1B2A4A" />
+</vector>
