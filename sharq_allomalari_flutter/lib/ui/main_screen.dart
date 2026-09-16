@@ -4,15 +4,10 @@ import '../data/favorites_manager.dart';
 import '../data/scholar_repository.dart';
 import '../models/scholar.dart';
 import '../theme/app_theme.dart';
+import '../widgets/app_menu_drawer.dart';
 import '../widgets/scholar_card.dart';
 import '../widgets/svg_icon.dart';
-import 'about_screen.dart';
 import 'detail_screen.dart';
-import 'favorites_screen.dart';
-import 'glossary_screen.dart';
-import 'observatories_screen.dart';
-import 'quiz_screen.dart';
-import 'topics_screen.dart';
 
 /// Ilovaning asosiy ekrani: barcha allomalar ro'yxati, qidiruv maydoni
 /// va soha bo'yicha filtr chip'lari (`MainActivity` ekvivalenti).
@@ -23,9 +18,12 @@ class MainScreen extends StatefulWidget {
   State<MainScreen> createState() => _MainScreenState();
 }
 
-class _MainScreenState extends State<MainScreen> {
+class _MainScreenState extends State<MainScreen>
+    with SingleTickerProviderStateMixin {
   final _favoritesManager = FavoritesManager();
   final _searchController = TextEditingController();
+  final _scaffoldKey = GlobalKey<ScaffoldState>();
+  late final AnimationController _menuIconController;
 
   ScholarCategory? _selectedCategory;
   String _query = '';
@@ -34,6 +32,10 @@ class _MainScreenState extends State<MainScreen> {
   @override
   void initState() {
     super.initState();
+    _menuIconController = AnimationController(
+      vsync: this,
+      duration: const Duration(milliseconds: 320),
+    );
     _refreshFavorites();
     _searchController.addListener(() {
       setState(() => _query = _searchController.text);
@@ -76,6 +78,7 @@ class _MainScreenState extends State<MainScreen> {
   @override
   void dispose() {
     _searchController.dispose();
+    _menuIconController.dispose();
     super.dispose();
   }
 
@@ -84,6 +87,18 @@ class _MainScreenState extends State<MainScreen> {
     final results = _filtered;
 
     return Scaffold(
+      key: _scaffoldKey,
+      endDrawer: AppMenuDrawer(
+        favoritesCount: _favoriteIds.length,
+        onFavoritesReturn: _refreshFavorites,
+      ),
+      onEndDrawerChanged: (isOpen) {
+        if (isOpen) {
+          _menuIconController.forward();
+        } else {
+          _menuIconController.reverse();
+        }
+      },
       body: CustomScrollView(
         slivers: [
           SliverAppBar(
@@ -100,58 +115,13 @@ class _MainScreenState extends State<MainScreen> {
             ),
             actions: [
               IconButton(
-                icon: const SvgIcon(
-                  'assets/icons/ic_star_filled.svg',
+                tooltip: 'Menyu',
+                icon: AnimatedIcon(
+                  icon: AnimatedIcons.menu_close,
+                  progress: _menuIconController,
                   color: AppColors.textOnPrimary,
                 ),
-                tooltip: 'Saralanganlar',
-                onPressed: () async {
-                  await Navigator.of(context).push(
-                    MaterialPageRoute(builder: (_) => const FavoritesScreen()),
-                  );
-                  _refreshFavorites();
-                },
-              ),
-              PopupMenuButton<VoidCallback>(
-                icon: const SvgIcon(
-                  'assets/icons/ic_info.svg',
-                  color: AppColors.textOnPrimary,
-                ),
-                onSelected: (action) => action(),
-                itemBuilder: (context) => [
-                  PopupMenuItem(
-                    value: () => Navigator.of(context).push(
-                      MaterialPageRoute(
-                        builder: (_) => const ObservatoriesScreen(),
-                      ),
-                    ),
-                    child: const Text('Rasadxonalar'),
-                  ),
-                  PopupMenuItem(
-                    value: () => Navigator.of(context).push(
-                      MaterialPageRoute(builder: (_) => const TopicsScreen()),
-                    ),
-                    child: const Text('Mavzular'),
-                  ),
-                  PopupMenuItem(
-                    value: () => Navigator.of(context).push(
-                      MaterialPageRoute(builder: (_) => const QuizScreen()),
-                    ),
-                    child: const Text('Test'),
-                  ),
-                  PopupMenuItem(
-                    value: () => Navigator.of(context).push(
-                      MaterialPageRoute(builder: (_) => const GlossaryScreen()),
-                    ),
-                    child: const Text("Lug'at"),
-                  ),
-                  PopupMenuItem(
-                    value: () => Navigator.of(context).push(
-                      MaterialPageRoute(builder: (_) => const AboutScreen()),
-                    ),
-                    child: const Text('Ilova haqida'),
-                  ),
-                ],
+                onPressed: () => _scaffoldKey.currentState?.openEndDrawer(),
               ),
             ],
             flexibleSpace: FlexibleSpaceBar(
