@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 
 import '../theme/app_theme.dart';
 import 'detail_screen.dart';
@@ -21,14 +20,10 @@ class AboutScreen extends StatelessWidget {
             height: 84,
             margin: const EdgeInsets.only(bottom: 16),
             alignment: Alignment.center,
-            decoration: const BoxDecoration(
-              color: AppColors.primary,
-              shape: BoxShape.circle,
-            ),
-            child: SvgPicture.asset(
-              'assets/icons/ic_splash_logo.svg',
-              width: 48,
-              height: 48,
+            child: Image.asset(
+              'assets/images/Logo.png',
+              width: 84,
+              height: 84,
             ),
           ),
           const Text(

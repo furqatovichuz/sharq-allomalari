@@ -90,7 +90,14 @@ class _MainScreenState extends State<MainScreen> {
             backgroundColor: AppColors.primary,
             pinned: true,
             expandedHeight: 168,
-            title: const Text('Sharq Allomalari'),
+            title: Row(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                Image.asset('assets/images/Logo.png', width: 28, height: 28),
+                const SizedBox(width: 8),
+                const Text('Sharq Allomalari'),
+              ],
+            ),
             actions: [
               IconButton(
                 icon: const SvgIcon(

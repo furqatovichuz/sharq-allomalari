@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 
 import '../theme/app_theme.dart';
 import 'main_screen.dart';
@@ -30,10 +29,10 @@ class _SplashScreenState extends State<SplashScreen> {
     return Scaffold(
       backgroundColor: AppColors.primary,
       body: Center(
-        child: SvgPicture.asset(
-          'assets/icons/ic_splash_logo.svg',
-          width: 140,
-          height: 140,
+        child: Image.asset(
+          'assets/images/Logo.png',
+          width: 160,
+          height: 160,
         ),
       ),
     );
