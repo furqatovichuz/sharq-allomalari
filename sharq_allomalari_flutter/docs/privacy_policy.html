@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sharq Allomalari — Maxfiylik siyosati</title>
+<title>Sharq Allomalari — Maxfiylik siyosati / Privacy Policy</title>
 <style>
   body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
@@ -22,7 +22,23 @@
   .updated {
     color: #6b7280;
     font-size: 13px;
-    margin-bottom: 32px;
+    margin-bottom: 24px;
+  }
+  .lang-switch {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 24px;
+  }
+  .lang-switch a {
+    display: inline-block;
+    padding: 6px 16px;
+    border: 1px solid #e4ddc9;
+    border-radius: 999px;
+    background: #fff;
+    color: #1b2a4a;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
   }
   h2 {
     color: #1b2a4a;
@@ -47,6 +63,11 @@
     padding: 16px 20px;
     margin-top: 12px;
   }
+  section + section {
+    margin-top: 64px;
+    padding-top: 32px;
+    border-top: 4px solid #e4ddc9;
+  }
   footer {
     margin-top: 48px;
     font-size: 12px;
@@ -57,8 +78,16 @@
 </head>
 <body>
 
+<nav class="lang-switch">
+  <a href="#uz">O'zbekcha</a>
+  <a href="#en">English</a>
+</nav>
+
+<!-- ===================== O'ZBEKCHA ===================== -->
+<section id="uz" lang="uz">
+
 <h1>Sharq Allomalari — Maxfiylik siyosati</h1>
-<p class="updated">Kuchga kirgan sana: 2026-yil 16-sentabr</p>
+<p class="updated">Kuchga kirgan sana: 2026-yil 21-sentabr</p>
 
 <p>
   "Sharq Allomalari" mobil ilovasi ("Ilova") — O'rta asr Sharq astronomlari, matematiklari va
@@ -66,55 +95,73 @@
   qanday ma'lumotlar qayta ishlanishini tushuntiradi.
 </p>
 
-<h2>1. Biz yig'adigan ma'lumotlar</h2>
+<h2>1. Biz yig'maydigan ma'lumotlar</h2>
 <p>
-  Ilova <strong>shaxsiy ma'lumotlaringizni yig'maydi va serverga yubormaydi</strong>. Ilova
-  to'liq oflayn rejimda ishlaydi: barcha olimlar, mavzular, lug'at va test ma'lumotlari Ilova
-  ichida oldindan saqlangan bo'lib, internet ulanishini talab qilmaydi.
+  Ilova <strong>hisob yaratishni talab qilmaydi</strong> va sizdan ism, email, telefon raqami,
+  joylashuv, kontaktlar, rasm yoki boshqa shaxsiy ma'lumotlarni so'ramaydi va yig'maydi.
+  Ilovada reklama yo'q va ma'lumotlaringiz reklama maqsadida ishlatilmaydi yoki sotilmaydi.
 </p>
-<p>Ilova quyidagi ma'lumotlarni faqat sizning qurilmangizda (lokal tarzda) saqlaydi:</p>
+
+<h2>2. Qurilmangizda saqlanadigan ma'lumotlar</h2>
+<p>
+  Ilova kontenti (olimlar, mavzular, lug'at va test savollari) Ilova ichida oldindan saqlangan
+  va internetsiz ishlaydi. Ilova quyidagilarni faqat sizning qurilmangizda (lokal tarzda) saqlaydi:
+</p>
 <ul>
-  <li>Siz "saralangan" (sevimli) deb belgilagan olimlar ro'yxati;</li>
-  <li>Ilova sozlamalari (masalan, oxirgi ko'rilgan bo'lim).</li>
+  <li>Siz "saralangan" deb belgilagan olimlar ro'yxati;</li>
+  <li>Ilova sozlamalari.</li>
 </ul>
 <p>
-  Ushbu ma'lumotlar hech qachon qurilmangizdan tashqariga yuborilmaydi, hech qanday serverga
-  uzatilmaydi va biz uni ko'ra olmaymiz.
+  Ushbu ma'lumotlar qurilmangizdan tashqariga yuborilmaydi va biz uni ko'ra olmaymiz.
 </p>
 
-<h2>2. Ruxsatlar</h2>
+<h2>3. Anonim analitika va xatolik hisobotlari (Firebase)</h2>
 <p>
-  Ilova ma'lumot almashish (Share) funksiyasidan foydalanganda operatsion tizimning standart
-  "Ulashish" oynasini ochadi — bu orqali siz o'zingiz tanlagan ilova (Telegram, WhatsApp va h.k.)
-  bilan matn ulashishingiz mumkin. Bu jarayonda hech qanday ma'lumot bizga yuborilmaydi.
+  Ilovani barqaror ishlashini ta'minlash va yaxshilash maqsadida Ilova Google tomonidan taqdim
+  etiladigan <strong>Firebase Analytics</strong> va <strong>Firebase Crashlytics</strong>
+  xizmatlaridan foydalanadi. Ular quyidagi <strong>anonim</strong> ma'lumotlarni yig'ishi mumkin:
 </p>
-
-<h2>3. Uchinchi tomon xizmatlari</h2>
+<ul>
+  <li>Foydalanish ma'lumotlari: ochilgan ekranlar va Ilova bilan o'zaro ta'sir (masalan, qaysi bo'lim ko'rilgani);</li>
+  <li>Qurilma va Ilova ma'lumotlari: qurilma modeli, operatsion tizim versiyasi, Ilova versiyasi, til va taxminiy mintaqa;</li>
+  <li>Ilova nusxasiga tayinlangan tasodifiy identifikator (Firebase installation ID / Analytics instance ID);</li>
+  <li>Ilova ishdan chiqqanda (crash) texnik xatolik hisoboti va ish faoliyati ko'rsatkichlari.</li>
+</ul>
 <p>
-  Ilova hozirda reklama tarmoqlari, analitika xizmatlari (masalan, Google Analytics) yoki
-  boshqa uchinchi tomon kuzatuv vositalaridan foydalanmaydi.
+  Bu ma'lumotlar sizning shaxsingiz bilan bog'lanmaydi, <strong>kuzatuv (tracking)</strong>
+  uchun ishlatilmaydi va reklama maqsadida foydalanilmaydi. Ular faqat Ilova sifatini oshirish
+  va xatoliklarni tuzatish uchun ishlatiladi. Google bu ma'lumotlarni qanday qayta ishlashi haqida:
+  <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">firebase.google.com/support/privacy</a>.
 </p>
 
-<h2>4. Bolalar maxfiyligi</h2>
+<h2>4. Ruxsatlar va ulashish</h2>
 <p>
-  Ilova ta'lim maqsadida yaratilgan bo'lib, barcha yosh toifalari uchun mos keladi va foydalanuvchidan
-  hech qanday shaxsiy ma'lumot so'ramaydi.
+  Ilova "Ulashish" funksiyasidan foydalanganda operatsion tizimning standart oynasini ochadi —
+  bu orqali siz o'zingiz tanlagan ilova (Telegram, WhatsApp va h.k.) bilan matn ulashasiz.
+  Bu jarayonda hech qanday ma'lumot bizga yuborilmaydi.
 </p>
 
-<h2>5. Ma'lumotlarni o'chirish</h2>
+<h2>5. Bolalar maxfiyligi</h2>
 <p>
-  Ilova qurilmangizda saqlagan barcha lokal ma'lumotlarni (saralanganlar ro'yxati) o'chirish uchun
-  qurilma sozlamalaridan Ilova ma'lumotlarini tozalashingiz yoki Ilovani o'chirib qayta o'rnatishingiz
-  kifoya.
+  Ilova ta'lim maqsadida yaratilgan bo'lib, barcha yosh toifalari uchun mos keladi. Ilova
+  bolalardan ham, boshqa foydalanuvchilardan ham shaxsiy ma'lumot so'ramaydi va yig'maydi.
 </p>
 
-<h2>6. Ushbu siyosatdagi o'zgarishlar</h2>
+<h2>6. Ma'lumotlarni o'chirish</h2>
 <p>
-  Ilova funksionalligi kengaytirilishi bilan (masalan, kelajakda hisob yaratish yoki bulutli
-  sinxronizatsiya qo'shilsa) ushbu sahifa yangilanadi va yangi sana ko'rsatiladi.
+  Qurilmangizda saqlangan lokal ma'lumotlarni (saralanganlar ro'yxati) o'chirish uchun Ilovani
+  o'chirib qayta o'rnating yoki qurilma sozlamalaridan Ilova ma'lumotlarini tozalang. Anonim
+  analitika ma'lumotlari sizning shaxsingiz bilan bog'lanmagani sababli ularni alohida shaxs
+  bo'yicha o'chirib bo'lmaydi; Ilovani o'chirish yangi ma'lumot yig'ilishini to'xtatadi.
 </p>
 
-<h2>7. Bog'lanish</h2>
+<h2>7. Ushbu siyosatdagi o'zgarishlar</h2>
+<p>
+  Ilova funksionalligi o'zgarsa (masalan, hisob yaratish yoki bulutli sinxronizatsiya qo'shilsa),
+  ushbu sahifa yangilanadi va yangi sana ko'rsatiladi.
+</p>
+
+<h2>8. Bog'lanish</h2>
 <div class="contact">
   <p style="margin:0">
     Savol yoki takliflaringiz bo'lsa, biz bilan bog'laning:<br>
@@ -122,8 +169,98 @@
   </p>
 </div>
 
+</section>
+
+<!-- ===================== ENGLISH ===================== -->
+<section id="en" lang="en">
+
+<h1>Sharq Allomalari — Privacy Policy</h1>
+<p class="updated">Effective date: September 21, 2026</p>
+
+<p>
+  "Sharq Allomalari" (the "App") is an educational mobile app that provides information about
+  medieval Eastern astronomers, mathematicians and thinkers. This document explains what data is
+  processed when you use the App.
+</p>
+
+<h2>1. Data we do not collect</h2>
+<p>
+  The App <strong>does not require an account</strong> and does not ask for or collect your name,
+  email, phone number, location, contacts, photos or any other personal information. The App
+  contains no advertising, and your data is never sold or used for advertising.
+</p>
+
+<h2>2. Data stored on your device</h2>
+<p>
+  All App content (scholars, topics, glossary and quiz questions) is bundled inside the App and
+  works offline. The App stores the following only locally on your device:
+</p>
+<ul>
+  <li>The list of scholars you have marked as favorites;</li>
+  <li>App preferences.</li>
+</ul>
+<p>
+  This data never leaves your device and we cannot see it.
+</p>
+
+<h2>3. Anonymous analytics and crash reports (Firebase)</h2>
+<p>
+  To keep the App stable and to improve it, the App uses <strong>Firebase Analytics</strong>
+  and <strong>Firebase Crashlytics</strong>, services provided by Google. They may collect the
+  following <strong>anonymous</strong> data:
+</p>
+<ul>
+  <li>Usage data: screens viewed and interactions with the App (for example, which section was opened);</li>
+  <li>Device and App information: device model, operating system version, App version, language and approximate region;</li>
+  <li>A randomly generated identifier assigned to the App installation (Firebase installation ID / Analytics instance ID);</li>
+  <li>Technical crash reports and performance data when the App fails.</li>
+</ul>
+<p>
+  This data is not linked to your identity, is <strong>not used for tracking</strong>, and is not
+  used for advertising. It is used only to improve App quality and fix errors. For details on how
+  Google processes this data, see
+  <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">firebase.google.com/support/privacy</a>.
+</p>
+
+<h2>4. Permissions and sharing</h2>
+<p>
+  When you use the Share feature, the App opens the operating system's standard share sheet, and
+  you choose which app (Telegram, WhatsApp, etc.) receives the text. No data is sent to us in
+  this process.
+</p>
+
+<h2>5. Children's privacy</h2>
+<p>
+  The App is educational and suitable for all ages. It does not ask for or collect personal
+  information from children or from any other users.
+</p>
+
+<h2>6. Deleting your data</h2>
+<p>
+  To remove the data stored locally on your device (your favorites list), uninstall and reinstall
+  the App or clear the App's data in your device settings. Because anonymous analytics data is
+  not linked to your identity, it cannot be deleted for an individual person; uninstalling the App
+  stops any further collection.
+</p>
+
+<h2>7. Changes to this policy</h2>
+<p>
+  If the App's functionality changes (for example, if accounts or cloud sync are added), this page
+  will be updated and a new date will be shown.
+</p>
+
+<h2>8. Contact</h2>
+<div class="contact">
+  <p style="margin:0">
+    If you have any questions or suggestions, contact us:<br>
+    <a href="mailto:shaxzodbek.norboyev1312@gmail.com">shaxzodbek.norboyev1312@gmail.com</a>
+  </p>
+</div>
+
+</section>
+
 <footer>
-  &copy; 2026 Sharq Allomalari. Barcha huquqlar himoyalangan.
+  &copy; 2026 Sharq Allomalari. Barcha huquqlar himoyalangan. / All rights reserved.
 </footer>
 
 </body>
